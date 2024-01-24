@@ -4,54 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первый сайт</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
 
-    <img src="https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/1809/NjF1mOA5DtVn1fNqp8bg.jpg" width="300" alt="Тут изображен я">
+    <div class="info">
+     <img src="https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/1809/NjF1mOA5DtVn1fNqp8bg.jpg" alt="Sicario" class="avatar"> 
     
-    <h1><strong><em>Бураков Матвей</em></strong></h1>
+    <div class="info-text">
+        <h1><strong><em>Бураков Матвей</em></strong></h1>
+
+        <hr>
+
+        <p> Я <strong> инженер </strong> по бурению скважин на <em>нефть</em> и <em>газ</em></p>
+
+
+        <p>Я мусульманин</p>
+
+        <p>Я люблю читать книги, играть в шахматы и путешествовать</p>
+
+
+        <h3><strong>Список социальных сетей:</strong></h3>
+
+        <a href="https://vk.com/benicio_del_toro" target="_blank">VK</a>
+        |
+        <a href="https://www.instagram.com/benicio_del_toro1" target="_blank">Instagram</a>
+        |
+        <a href="https://www.youtube.com/watch?v=KS1cNkZ9o1U" target="_blank">Youtube</a>
+        </div>
+    </div>
 
     <hr>
 
-    <p> Я <strong> инженер </strong> по бурению скважин на <em>нефть</em> и <em>газ</em></p>
-
-
-    <p>Я мусульманин</p>
-
-    <p>Я люблю читать книги, играть в шахматы и путешествовать</p>
-
-
-    <h3><strong>Список социальных сетей:</strong></h3>
-
-    <a href="https://vk.com/benicio_del_toro" target="_blank">VK</a>
-    |
-    <a href="https://www.instagram.com/benicio_del_toro1" target="_blank">Instagram</a>
-    |
-    <a href="https://www.youtube.com/watch?v=KS1cNkZ9o1U" target="_blank">Youtube</a>
-
-    <hr>
-
+<div class="card bg-red">
     <h2><strong>Мои хобби</strong></h2>
 
-    <ol type="1">
+    <ol class="list">
         <li>Чтение</li>
         <li>Шахматы</li>
         <li>Бокс</li>
         <li>Программирование</li>
         <li>Кулинария</li>
     </ol>
+</div>
 
-
+<div class="card bg-yellow">
     <h2><strong>Опыт работы</strong></h2>
 
-    <table>    
-        <thead>
+    <table class="table">    
+        <!-- <thead>
             <tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
-        </thead>
+        </thead> -->
 
         <tbody>
             <tr>
@@ -77,33 +85,33 @@
             </tr>
         </tbody>
     </table>
+</div>
 
-<hr>
     
-    <h1><strong>Связаться со мной</strong></h1>
+    <form action="/" class="form">
+        <h2><strong>Связаться со мной</strong></h2>
 
-    <form>
+        <div class="form-row">
 
-        <div>
-           <label for="name">Ваше имя:</label>
-           <input type="text" id="name" placeholder="Введите имя"> 
+         <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя"> 
+         </div>
+
+         <div class="form-group">
+             <label for="email">Ваш email:</label>
+             <input type="email" id="email" placeholder="Введите email"> 
+         </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email"> 
-         </div>
-
-         <div>
+        <div class="form-group">
             <label for="massage">Ваше сообщение:</label>
-
             <br>
+            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+        </div>
 
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
-         </div>
 
-
-         <button type="submit"><strong>Отправить!</strong></button>
+        <button class="btn" type="submit"><strong>Отправить!</strong></button>
 
 
 
@@ -111,6 +119,6 @@
     </form>
 
 
-    
+</div>   
 </body>
 </html>
